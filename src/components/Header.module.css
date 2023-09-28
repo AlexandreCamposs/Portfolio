@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #13131f;
+  color: #fff;
+  border-bottom: 0.3rem solid var(--blue-color);
+}
+.logo {
+  font-size: 2rem;
+}
+.toggle {
+  width: 3rem;
+  padding: 0.6rem;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}

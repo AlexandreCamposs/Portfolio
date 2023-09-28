@@ -1,0 +1,159 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  height: 50vh;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 50%;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+}
+.banner h2,
+span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.banner span {
+  color: var(--title-color);
+  margin: 0.5rem 0 1.2rem 0;
+}
+.banner p {
+  color: var(--p-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  padding: 0.6rem 0.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  margin-right: 0.5rem;
+}
+.profile {
+  cursor: pointer;
+}
+.about-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+
+  text-align: center;
+}
+.about-perfil h2,
+.about-perfil p {
+  margin-bottom: 1rem;
+}
+.about-perfil h2 {
+  font-size: 2rem;
+  color: var(--title-color);
+}
+.about-perfil p {
+  color: var(--p-color);
+  padding: 1rem;
+}
+
+.container-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.container-skill h2 {
+  margin-bottom: 1.5rem;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  padding: 2rem;
+  width: 100px;
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border-bottom: 0.3rem solid var(--blue-color);
+}
+.skill-box:hover,
+.contact div:hover {
+  transition: 1s;
+  box-shadow: 0px 0px 11px 6px rgba(0, 0, 0, 0.75);
+}
+.skill-box svg {
+  color: var(--blue-color);
+  font-size: 2.5rem;
+}
+.skill-box p {
+  color: var(--blue-color);
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container-contact h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+.contact {
+  display: flex;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.contact div svg {
+  color: var(--blue-color);
+  background-color: var(--bg-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+.contact div span {
+  font-size: 1rem;
+  color: var(--p-color);
+}
+/* .app {
+  margin-bottom: 55rem;
+} */
+@media (max-width: 420px) {
+  .banner div button {
+    margin-bottom: 0.5rem;
+  }
+}
