@@ -5,6 +5,7 @@ export const dataProjects = [
     url: 'https://calculator-imc-alecampos.vercel.app/ ',
     github: 'https://github.com/AlexandreCamposs/CalculatorIMC',
     img: '/calculatorImc.jpeg',
+    player: 'https://www.youtube.com/watch?v=o2SK7VKpmE4',
   },
   {
     title: 'Card Details ',
@@ -12,6 +13,8 @@ export const dataProjects = [
     url: 'https://cdetails-alecamposs.vercel.app/',
     github: 'https://github.com/AlexandreCamposs/cardDetails',
     img: '/cardDetails.jpeg',
+    player:
+      'https://www.youtube.com/watch?v=_qbBumNa4iI&list=PLRpgWoGvT8SbSCHB91GCgg6bByBRhb8t1',
   },
   {
     title: 'Newsletter ',
@@ -19,6 +22,7 @@ export const dataProjects = [
     url: 'https://newsletter-ale.vercel.app/',
     github: 'https://github.com/AlexandreCamposs/Newsletter',
     img: '/newsLetter.jpeg',
+    player: 'https://www.youtube.com/watch?v=nIe_2qlzry4',
   },
   {
     title: 'MoviesAle',
@@ -26,6 +30,7 @@ export const dataProjects = [
     url: 'https://movies-alecampos.vercel.app/',
     github: 'https://github.com/AlexandreCamposs/moviesAle/tree/main',
     img: '/moviesAle.jpeg',
+    player: 'https://www.youtube.com/watch?v=FEmpr0zGMn4',
   },
   {
     title: 'Github Search',
@@ -33,6 +38,7 @@ export const dataProjects = [
     url: 'https://githubsearch-ale.vercel.app/',
     github: 'https://github.com/AlexandreCamposs/githubSearch/tree/main',
     img: '/gitHub.jpeg',
+    player: 'https://www.youtube.com/watch?v=HKYdlloGAb0',
   },
   {
     title: 'Crud Api ',
@@ -40,6 +46,7 @@ export const dataProjects = [
     url: 'https://crud-api-ale.vercel.app/ ',
     github: 'https://github.com/AlexandreCamposs/CrudApi/tree/main ',
     img: '/crudApi.jpeg',
+    player: 'https://www.youtube.com/watch?v=Kpxg6BLk1rw',
   },
   {
     title: 'AlêFlix ',
@@ -47,6 +54,7 @@ export const dataProjects = [
     url: 'https://alexandrecamposs.github.io/AleFlix_Dio/',
     github: 'https://github.com/AlexandreCamposs/AleFlix_Dio',
     img: '/aleFlix.jpeg',
+    player: 'https://www.youtube.com/watch?v=aqA2iWFcSiM',
   },
   {
     title: 'BarbeariaAlura',
@@ -54,6 +62,7 @@ export const dataProjects = [
     url: 'https://alexandrecamposs.github.io/HTML5_CSS3-Alura/',
     github: 'https://github.com/AlexandreCamposs/HTML5_CSS3-Alura',
     img: '/barbeariaAlura.jpeg',
+    player: 'https://www.youtube.com/watch?v=Tc3_QlEThE4',
   },
   {
     title: 'MediCenter',
@@ -61,6 +70,7 @@ export const dataProjects = [
     url: 'https://alexandrecamposs.github.io/Flex_Box_HTML_B7Web/',
     github: 'https://github.com/AlexandreCamposs/Flex_Box_HTML_B7Web',
     img: '/medCenter.jpeg',
+    player: 'https://www.youtube.com/watch?v=RCj1YfF57g0',
   },
   {
     title: 'Awax',
@@ -68,5 +78,7 @@ export const dataProjects = [
     url: 'https://alexandrecamposs.github.io/B7web-Awax/',
     github: 'https://alexandrecamposs.github.io/B7web-Awax/',
     img: '/awax.jpeg',
+    player:
+      'https://www.youtube.com/watch?v=_qbBumNa4iI&list=PLRpgWoGvT8SbSCHB91GCgg6bByBRhb8t1',
   },
 ];

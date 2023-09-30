@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiFillGithub } from 'react-icons/ai';
 import { MdContactPage } from 'react-icons/md';
 import style from './Modal.module.css';
+import MyPlayer from './MyPlayer';
 
 const Modal = ({ handleModal, project }) => {
   return (
@@ -11,7 +12,9 @@ const Modal = ({ handleModal, project }) => {
         <div className={style.close} onClick={() => handleModal(false)}>
           x
         </div>
-        <div className={style.video}>video</div>
+        <div className={style.video}>
+          <MyPlayer project={project} />
+        </div>
 
         <div className={style.project}>
           <Link to={project.github}>

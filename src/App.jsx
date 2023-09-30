@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import CardProject from './components/CardProject';
+import Header from './components/Header';
 
 import { AiFillHtml5, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import {
@@ -12,7 +13,7 @@ import {
 import style from './App.module.css';
 import ImageProfile from '/perfil.jpeg';
 
-function App() {
+const App = () => {
   const handleGitHub = () => {
     window.location.assign('https://github.com/AlexandreCamposs');
   };
@@ -22,8 +23,13 @@ function App() {
     );
   };
 
+  const handleDownload = () => {
+    window.open('/public/AlexandreAtt.pdf', '_blank');
+  };
+
   return (
     <div className={style.app}>
+      <Header />
       <section>
         <div className={style.about}>
           <div className={style.banner}>
@@ -31,8 +37,7 @@ function App() {
             <span>Alexandre Campos</span>
             <p>Desenvolvedor Front-End</p>
             <div>
-              <button>Download CV</button>
-              <button>Entrar em contato</button>
+              <button onClick={handleDownload}>Download CV</button>
             </div>
           </div>
           <div className={style.profile} onClick={handleGitHub}>
@@ -97,6 +102,6 @@ function App() {
       </section>
     </div>
   );
-}
+};
 
 export default App;
