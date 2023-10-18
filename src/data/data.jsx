@@ -1,5 +1,13 @@
 export const dataProjects = [
   {
+    title: 'TeslaBank ',
+    tools: 'React,Sass',
+    url: 'https://tesla-bank.vercel.app/',
+    github: 'https://github.com/AlexandreCamposs/TeslaBank',
+    img: '/teslabank.jpeg',
+    player: 'https://www.youtube.com/watch?v=rf4NMltQDw0',
+  },
+  {
     title: 'Calculator IMC ',
     tools: 'React,Sass',
     url: 'https://calculator-imc-alecampos.vercel.app/ ',
