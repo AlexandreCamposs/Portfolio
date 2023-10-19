@@ -1,8 +1,13 @@
-import React from 'react';
-import style from './Header.module.css';
+import { ThemeContext } from '../context/ThemeContext';
+import { useContext } from 'react';
+
 import { BsCodeSlash } from 'react-icons/bs';
 
+import style from './Header.module.css';
+
 const Header = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <header>
       <div className={style.container}>
@@ -12,7 +17,7 @@ const Header = () => {
         <div>
           <h1>Portfólio</h1>
         </div>
-        <button className={style.toggle}></button>
+        <button className={style.toggle} onClick={toggleTheme}></button>
       </div>
     </header>
   );

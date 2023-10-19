@@ -17,3 +17,7 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+header.darktheme .container {
+  border-bottom: 0.3rem solid var(--white-color) !important;
+}

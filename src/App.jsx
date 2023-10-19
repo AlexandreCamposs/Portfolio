@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import CardProject from './components/CardProject';
 import Header from './components/Header';
+import CardProject from './components/CardProject';
 
 import { AiFillHtml5, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import {
@@ -10,9 +10,12 @@ import {
   BiLogoReact,
   BiLogoSass,
 } from 'react-icons/bi';
-import style from './App.module.css';
 import ImageProfile from '/perfil.jpeg';
+import Curriculum from '/Curriculum.pdf';
+import style from './App.module.css';
 
+import { useContext } from 'react';
+import { ThemeContext } from './context/ThemeContext';
 const App = () => {
   const handleGitHub = () => {
     window.location.assign('https://github.com/AlexandreCamposs');
@@ -23,12 +26,10 @@ const App = () => {
     );
   };
 
-  const handleDownload = () => {
-    window.open('/public/AlexandreAtt.pdf', '_blank');
-  };
-
+  const { theme } = useContext(ThemeContext);
+  console.log(theme);
   return (
-    <div className={style.app}>
+    <div className={`${theme === 'dark' ? style.darktheme : ''}`}>
       <Header />
       <section>
         <div className={style.about}>
@@ -37,7 +38,14 @@ const App = () => {
             <span>Alexandre Campos</span>
             <p>Desenvolvedor Front-End</p>
             <div>
-              <button onClick={handleDownload}>Download CV</button>
+              <Link
+                to={Curriculum}
+                download="Curriculum"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download CV
+              </Link>
             </div>
           </div>
           <div className={style.profile} onClick={handleGitHub}>
@@ -77,6 +85,10 @@ const App = () => {
               <BiLogoSass />
               <p>Sass</p>
             </div>
+            <div className={style['skill-box']}>
+              <AiFillGithub />
+              <p>GitHub</p>
+            </div>
           </div>
         </div>
       </section>
@@ -87,12 +99,12 @@ const App = () => {
         <div className={style['container-contact']}>
           <h2>Contatos</h2>
           <div className={style.contact}>
-            <div className={style} onClick={handleGitHub}>
+            <div onClick={handleGitHub}>
               <AiFillGithub />
               <h4>GitHub</h4>
               <span>@AlexandreCamposs</span>
             </div>
-            <div className={style} onClick={handleLinkedin}>
+            <div onClick={handleLinkedin}>
               <AiFillLinkedin />
               <h4>GitHub</h4>
               <span>@AlexandreCamposs</span>

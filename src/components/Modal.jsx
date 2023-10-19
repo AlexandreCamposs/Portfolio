@@ -7,7 +7,7 @@ import MyPlayer from './MyPlayer';
 
 const Modal = ({ handleModal, project }) => {
   return (
-    <div className={style.container}>
+    <div className={style['container-modal']}>
       <div className={style.modal}>
         <div className={style.close} onClick={() => handleModal(false)}>
           x

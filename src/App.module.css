@@ -34,9 +34,9 @@ span {
 .banner p {
   color: var(--p-color);
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-button {
+.about div a {
   background-color: var(--bg-color);
   color: var(--white-color);
   padding: 0.6rem 0.8rem;
@@ -44,6 +44,7 @@ button {
   cursor: pointer;
   border: none;
   margin-right: 0.5rem;
+  text-decoration: none;
 }
 .profile {
   cursor: pointer;
@@ -118,7 +119,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .container-contact h2 {
@@ -149,11 +149,35 @@ button {
   font-size: 1rem;
   color: var(--p-color);
 }
-/* .app {
-  margin-bottom: 55rem;
-} */
+
 @media (max-width: 420px) {
   .banner div button {
     margin-bottom: 0.5rem;
   }
+}
+
+.darktheme {
+  background-color: #0c0c1e;
+}
+.darktheme h1,
+.darktheme span,
+.darktheme h2,
+.darktheme h4 {
+  color: #006bc8;
+}
+
+.darktheme .skill-box svg,
+.darktheme .skill-box p,
+.darktheme .contact svg,
+.darktheme .contact p {
+  color: #fff;
+}
+.darktheme .skill-box {
+  border-bottom: 0.3rem solid var(--white-color);
+}
+.darktheme header > div {
+  border-bottom: 0.3rem solid var(--white-color) !important;
+}
+.darktheme .container-project .container-modal div {
+  background-color: red;
 }
