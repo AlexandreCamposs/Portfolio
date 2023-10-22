@@ -60,10 +60,8 @@
 .project p {
   margin-top: 0.5rem;
   font-weight: bold;
-  color: var(--p-color);
 }
 .project svg {
-  color: var(--blue-color);
   background-color: var(--bg-color);
   padding: 0.5rem;
   border-radius: 50%;

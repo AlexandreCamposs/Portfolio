@@ -1,12 +1,18 @@
 import { createContext, useState } from 'react';
+import { defaultTheme, darkTheme } from '../styles/Themes.styles';
 
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(defaultTheme);
+  console.log(theme);
 
   const toggleTheme = () => {
-    setTheme(theme === '' ? 'dark' : '');
+    if (theme.name === 'light') {
+      setTheme(darkTheme);
+    } else if (theme.name === 'dark') {
+      setTheme(defaultTheme);
+    }
   };
 
   return (
@@ -15,7 +21,3 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
-
-// const useTheme = () => useContext(ThemeContext);
-
-// export { ThemeProvider, useTheme };

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import Modal from './Modal';
-import { dataProjects as projectsData } from '../data/data';
+import Modal from '../Modal/Modal';
+import { dataProjects as projectsData } from '../../data/data';
 
 import style from './CardProject.module.css';
 

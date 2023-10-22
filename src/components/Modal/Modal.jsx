@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiFillGithub } from 'react-icons/ai';
 import { MdContactPage } from 'react-icons/md';
 import style from './Modal.module.css';
-import MyPlayer from './MyPlayer';
+import MyPlayer from '../MyPlayer/MyPlayer';
 
 const Modal = ({ handleModal, project }) => {
   return (
