@@ -9,6 +9,7 @@ import {
   BiLogoJavascript,
   BiLogoReact,
   BiLogoSass,
+  BiLogoTailwindCss,
 } from 'react-icons/bi';
 import ImageProfile from '/perfil.jpeg';
 import Curriculum from '/Curriculum.pdf';
@@ -49,6 +50,7 @@ const App = () => {
                   download="Curriculum"
                   target="_blank"
                   rel="noreferrer"
+                  className="cv"
                 >
                   Download CV
                 </Link>
@@ -62,8 +64,8 @@ const App = () => {
             <h2>Sobre mim</h2>
             <p>
               Desenvolvedor Front-end com experiência em HTML, CSS, JavaScript,
-              React.js, Styled Components, Sass e consumo de APIs REST. Formado
-              em Análise e Desenvolvimento de Sistemas.
+              React, Scss Tailwind,gitHub e consumo de APIs. Formado em Análise
+              e Desenvolvimento de Sistemas.
             </p>
           </div>
         </section>
@@ -90,6 +92,10 @@ const App = () => {
               <div className={style['skill-box']}>
                 <BiLogoSass />
                 <span>Sass</span>
+              </div>
+              <div className={style['skill-box']}>
+                <BiLogoTailwindCss />
+                <span>Tailwind</span>
               </div>
               <div className={style['skill-box']}>
                 <AiFillGithub />

@@ -24,9 +24,7 @@ header{
  body {
     width: 100%;
     background: ${(props) => props.theme.colors.background};
-
-  
-
+    
    h2,h4{
      color: ${(props) => props.theme.colors.secundary};
    } 
@@ -46,6 +44,16 @@ header{
   span{
    color: ${(props) => props.theme.colors.primary};
    }
+
+   button {
+    color: #13131f;
+   }
+
+    .cv {
+    color: #fff !important;
+    background-color: #13131f !important;
+   }
+ 
  
 }
  

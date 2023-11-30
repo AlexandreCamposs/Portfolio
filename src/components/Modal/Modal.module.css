@@ -18,8 +18,8 @@
   padding: 2rem;
   width: 50%;
   background-color: #fff;
-  border-radius: 10px;
-  transition: 1s;
+  border-radius: 5px;
+  border: solid 1px #5e6566;
 }
 .close {
   position: absolute;

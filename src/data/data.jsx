@@ -1,5 +1,13 @@
 export const dataProjects = [
   {
+    title: 'Nupad ',
+    tools: 'React,Tailwind',
+    url: 'https://naped-three.vercel.app/',
+    github: 'https://github.com/AlexandreCamposs/Naped',
+    img: '/naped.jpeg',
+    player: 'https://www.youtube.com/watch?v=_zl9ET8kDJw',
+  },
+  {
     title: 'TeslaBank ',
     tools: 'React,Sass',
     url: 'https://tesla-bank.vercel.app/',
